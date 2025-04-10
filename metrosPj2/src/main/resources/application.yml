@@ -1,0 +1,24 @@
+server:
+  port: 8086
+  upload:
+    folder: C:\\Users\\user\\Desktop\\SpringlessonMohirdev\\SpringJpafayl
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/metroPj
+    username: asilMetr
+    password: 5432
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
+
+
+
+
+
+
+
+
