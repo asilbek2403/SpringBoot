@@ -15,5 +15,7 @@ public class Main {
         Lesson lesson = (Lesson) context.getBean("lesAuto");
         System.out.println();
         System.out.println(lesson);
+
+        
     }
 }
