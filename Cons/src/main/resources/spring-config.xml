@@ -1,0 +1,59 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--        <bean id="professor1" class="shah.uz.Professor">-->
+<!--            <property name="pName" value="Osmon"/>-->
+<!--            <property name="pSurname" value="Yulduz"/>-->
+
+<!--        </bean>-->
+
+<!--    <bean id = "asissent1" class="shah.uz.Assisent">-->
+<!--        <property name="aName" value="Yordamchi"/>-->
+<!--        <property name="aSurname" value="Yordamchiyev"/>-->
+<!--    </bean>-->
+
+    <!--    Set metodi bilan BEAN yaratish-->
+    <!--    <bean class="shah.uz.Lesson" name="lesson1">-->
+    <!--        <property name="name" value="Practikum1"/>-->
+    <!--        <property name="professor" ref="professor1"/>-->
+    <!--        <property name="assisent" ref="asissent1"/>-->
+    <!--    </bean>-->
+
+<!--    CONSTRUCTOR bilan BEAN yarat-->
+
+    <!--    <bean name="lesson2c" class="shah.uz.Lesson">-->
+    <!--        <constructor-arg name="name">-->
+    <!--        <value> "Constructor bilan bean "</value>-->
+<!--        </constructor-arg>-->
+<!--        <constructor-arg name="assisent" ref="asissent1"  Constructor(name.pro,as)/>-->
+<!--        <constructor-arg name="name" value="Nom"/>-->
+    <!--        <constructor-arg name="professor" ref="professor1"/>-->
+    <!--        <constructor-arg name="assisent" ref="asissent1"/>-->
+
+
+
+
+<!--    Autowired Namuna-->
+
+    <bean id="professor11" class="shah.uz.Professor">
+        <property name="pName" value="Osmon"/>
+        <property name="pSurname" value="Yulduz"/>
+
+    </bean>
+
+    <bean id = "assisent11" class="shah.uz.Assisent">
+        <property name="aName" value="Yordamchi"/>
+        <property name="aSurname" value="Yordamchiyev"/>
+
+    </bean>
+<!--                                                    byName or byType
+(typeda va constrc(type field) da >> nomi muhim emas bboshqacha nomlar ham bolveradi.Muhimi Type-->
+
+    <bean name="lesAuto" class="shah.uz.Lesson" autowire="constructor">
+<!--    <property name="name" value="Chaqmoq"     Primitiv(int long string   ishlatmaymiz)/>-->
+
+    </bean>
+
+</beans>
