@@ -27,10 +27,7 @@ public class ApplicationConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/springjdb_ga");
-        dataSource.setUsername("spring_jdb_connect");
-        dataSource.setPassword("2005");
+     //bunda baza connecting ...
 
         return dataSource;
 }
